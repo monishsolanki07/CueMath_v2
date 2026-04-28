@@ -45,29 +45,35 @@ Audio Stream → Client
 ---
 
 ```
-THE_ONE/
+CUEMATH_V2/
 │
 ├── 📁 Backend/
-│   ├── main.py              ← FastAPI app, WebSocket, AI logic
-│   ├── requirements.txt     ← Python dependencies
-│   ├── .env                 ← API keys (not committed)
-│   └── .gitignore
+│   └── backend_teacher_forum/
+│       ├── main.py
+│       ├── requirements.txt
+│       ├── .gitignore
+│       └── .env                
 │
-└── 📁 Frontend/
-    └── interviewer/
-        │
-        ├── 📁 app/
-        │   ├── layout.tsx   ← Root layout
-        │   ├── page.tsx     ← Main interview UI
-        │   ├── globals.css  ← Global styles
-        │   └── favicon.ico
-        │
-        ├── 📁 public/       ← Static assets (SVGs, icons)
-        │
-        ├── next.config.ts
-        ├── tsconfig.json
-        ├── package.json
-        └── .env             ← Frontend env vars
+├── 📁 Frontend/
+│   └── teacher_recruiter/
+│       ├── 📁 app/
+│       │   ├── 📁 interview/
+│       │   │   └── page.tsx
+│       │   ├── layout.tsx
+│       │   ├── page.tsx
+│       │   ├── globals.css
+│       │   └── favicon.ico
+│       │
+│       ├── 📁 public/
+│       │
+│       ├── .gitignore
+│       ├── eslint.config.mjs
+│       ├── next.config.ts
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── postcss.config.mjs
+│       ├── README.md
+│       └── tsconfig.json
 ```
 
 ## ⚙️ Tech Stack
